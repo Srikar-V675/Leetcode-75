@@ -1,4 +1,4 @@
-# Problem Definition
+# 1. Problem Definition
 
 **Difficulty:** `Easy`
 
@@ -24,17 +24,17 @@ Output: false
 
 A lot of edge cases, honestly this is a easy question but a pain in the a**.
 
-# Approach
+# 2. Approach
 
-The approach is simple, i.e if the previous and ahead spaces are not planted then we can plant in the current space.
+The approach is simple: if the previous and next spaces are not planted, then we can plant in the current space.
 
-There can be a edge case when the first element and last element are involved since they don't have previous and next respectively.
+There are edge cases when the first and last elements are involved since they don't have previous and next elements, respectively.
 
-My approach to that was to have a bunch of if-else statements which made the code longer but I found a simpler code. I'm going to write the pseudo code for both below.
+My initial approach involved several if-else statements, which made the code longer, but I found a simpler method. I'll describe the pseudo code for both approaches below.
 
-# Pseudo Code
+# 3. Pseudo Code
 
-### My Approach
+### 3.0.1. My Approach
 
 ```
 IF length(flowerbed) == 1 then
@@ -64,7 +64,7 @@ IF length(flowerbed) == 1 then
     return count >= n
 ```
 
-### Optimal Approach
+### 3.0.2. Optimal Approach
 
 ```
 count = 0
@@ -78,8 +78,10 @@ FOR i in range(1, length(flowerbed) - 1)
 return count >= n
 ```
 
-# Code
+# 4. Code
 
 **Time Complexity:** O(N)
 
 **Space Complexity:** O(1)
+
+[[placeFlowers.py | Python Code]]

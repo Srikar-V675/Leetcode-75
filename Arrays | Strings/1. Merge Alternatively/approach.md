@@ -1,4 +1,4 @@
-# Problem Definition
+# 1. Problem Definition
 
 **Difficulty:** `Easy`
 
@@ -41,14 +41,12 @@ word2:    p   q
 merged: a p b q c   d
 ```
 
-# Approach
+# 2. Approach
 
-It is a very simple problem, we need to iterate while concatenating each character alternatively from both strings until one of the strings or both are exhausted.
-
-After this we can check the string which is longer and concatenate the remaining characters by using the index that came out of the above loop.
+This problem can be solved by iterating through both strings while concatenating each character alternatively until one or both strings are exhausted. If one string is longer, concatenate the remaining characters from that string to the end of the merged string.
 
 
-# Pseudo Code
+# 3. Pseudo Code
 
 ```
 N = word1 length
@@ -68,8 +66,10 @@ ELSE
 return MERGED
 ```
 
-# Code
+# 4. Code
 
 T**ime Complexity**: O(N)
 
 **Space Complexity**: O(N + M)
+
+[[mergeAlternative.py | Python Code]]

@@ -1,4 +1,6 @@
-# Problem Definition
+# 1. Problem Definition
+
+**Difficulty:** `Easy`
 
 For two strings s and t, we say "t divides s" if and only if s = t + t + t + ... + t + t (i.e., t is concatenated with itself one or more times).
 
@@ -25,7 +27,7 @@ Input: str1 = "LEET", str2 = "CODE"
 Output: ""
 ```
 
-# Approach
+# 2. Approach
 
 If str1 + str2 not same as str2 + str1 we can say that these strings don't have a GCD. Let's take an example:
 
@@ -50,9 +52,9 @@ GCD(6, 2) = 2 which is length of GCD of the strings.
 > NOTE:
 > You can either use the math library to calculate GCD or you can whip up your own function that calculates the GCD.
 
-# Pseudo Code
+# 3. Pseudo Code
 
-### My Approach
+### 3.0.1. My Approach
 
 I identified the gcd of lengths part but didn't figure out the other part
 
@@ -85,7 +87,7 @@ ELSE IF m > n and num * gcd != str2 then
 return gcd
 ```
 
-### Optimal Approach
+### 3.0.2. Optimal Approach
 
 ```
 GCD(x, y)
@@ -102,9 +104,10 @@ return str1[: gcdLen]
 ```
 
 
-# Code
+# 4. Code
 
 **Time Complexity:** O(M + N)
 
 **Space Complexity:** O(M + N)
 
+[[gcdStrings.py | Python Code]]

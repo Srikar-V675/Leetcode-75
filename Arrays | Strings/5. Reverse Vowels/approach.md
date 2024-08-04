@@ -1,4 +1,6 @@
-# Problem Definition
+# 1. Problem Definition
+
+**Difficulty:** `Easy`
 
 Given a string s, reverse only all the vowels in the string and return it.
 
@@ -20,7 +22,7 @@ Input: s = "leetcode"
 Output: "leotcede"
 ```
 
-# Approach
+# 2. Approach
 
 We have to reverse just the vowels in the string, therefore we can use `2-pointer approach`.
 
@@ -28,9 +30,9 @@ We can have one pointer at the start and the other at the end of the array. The 
 
 Since srings are immutable we must first convert the string to a list of characters.
 
-# Pseudo Code
+# 3. Pseudo Code
 
-### Brute Force
+### 3.0.1. Brute Force
 
 ```
 vowels = []
@@ -52,7 +54,7 @@ FOR ch in s
 return new
 ```
 
-### Optimal
+### 3.0.2. Optimal
 
 ```
 s = list(s)
@@ -72,8 +74,10 @@ WHILE left < right
 return ''.join(s)
 ```
 
-# Code
+# 4. Code
 
 **Time Complexity:** O(N)
 
 **Space Complexity:** O(N)
+
+[[reverseVowels.py | Python Code]]

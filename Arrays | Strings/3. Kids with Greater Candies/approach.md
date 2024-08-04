@@ -1,4 +1,4 @@
-# Problem Definition
+# 1. Problem Definition
 
 **Difficulty:** `Easy`
 
@@ -39,13 +39,13 @@ Input: candies = [12,1,12], extraCandies = 10
 Output: [true,false,true]
 ```
 
-# Approach
+# 2. Approach
 
 Since we need to find if after adding the extra candies the number of candies of the current kid is greater than or equal to the highest number of candies among the kids, we need to find the maximum number of candies
 
 Now, we need to iterate through the candies array and check if after adding extra candies they are greater than or equal to the max.
 
-# Psuedo Code
+# 3. Psuedo Code
 
 ```
 maxCandy = MAX(candies)
@@ -61,8 +61,10 @@ FOR candy in candies
 return result
 ```
 
-# Code
+# 4. Code
 
 **Time Complexity:** O(N)
 
 **Space Complexity:** O(N)
+
+[[greaterCandies.py | Python Code]]
