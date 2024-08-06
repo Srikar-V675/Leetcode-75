@@ -1,8 +1,8 @@
-# Leetcode-75
-Welcome to the Leetcode-75 repository! This repository contains solutions for the problems in the Leetcode 75 list, a comprehensive set of Data Structures and Algorithms (DSA) questions that are beneficial for quick and effective DSA preparation.
+# DSA Problems
+Welcome to my repository! This repository contains solutions for the problems I've solved on Leetcode for my Interview Prep.
 
 ## Objective
-My goal is to complete this list within 30 days by solving approximately 3 problems per day.
+My goal is to solve approximately 3 problems per day.
 
 ## Language
 All solutions are implemented in Python, leveraging its simplicity and extensive library support.
